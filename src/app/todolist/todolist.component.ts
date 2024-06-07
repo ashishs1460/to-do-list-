@@ -8,7 +8,7 @@ import { NgForm } from '@angular/forms';
 })
 export class TodolistComponent implements OnInit {
 
-  taskArray = [{taskName:'Brush teeth', isCompleted:false}]
+  taskArray = []
   
   onSubmit(formdata : NgForm){
 
