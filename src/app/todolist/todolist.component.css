@@ -3,44 +3,61 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: gray;  /* Set a background color for the container */
+    background: url('https://img.freepik.com/free-photo/business-concept-with-team-close-up_23-2149151159.jpg?t=st=1717739705~exp=1717743305~hmac=79fa2c922303ce04b09950f73e74fdf724b6c086cb86e220768fe9f0c2217ee9&w=1800') no-repeat center center;  /* Background image */
+    background-size: cover;  /* Cover the entire container */
 }
 
 .card {
+    width: 100%;
     max-width: 600px;
     padding: 20px;
-    background-color: #ffffff; /* Set a background color for the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);  /* Dark background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);  /* Deeper shadow */
+    color: #ffffff;  /* White text color */
 }
 
 h1 {
     text-align: center;
     font-size: 2rem;
-    color: #01010b;
+    color: #ffffff;  /* White color for title */
 }
 
 #submitButton {
     margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth transitions */
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+#submitButton:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
 }
 
 .checkbox-container {
+    display: inline-block;
     position: relative;
     cursor: pointer;
     user-select: none;
 }
 
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+input[type="checkbox"] {
+    display: none;  /* Hide the default checkbox */
 }
 
-#myCheckbox:checked + .checkmark {
+.checkmark {
+   
+    
+    height: 20px;
+    width: 20px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+input[type="checkbox"]:checked + .checkmark {
     background-color: #2196F3;
 }
 
@@ -50,11 +67,11 @@ h1 {
     display: none;
 }
 
-#myCheckbox:checked + .checkmark:after {
+input[type="checkbox"]:checked + .checkmark:after {
     display: block;
 }
 
-#myCheckbox:checked + .checkmark:after {
+input[type="checkbox"] + .checkmark:after {
     left: 7px;
     top: 3px;
     width: 6px;
@@ -67,14 +84,56 @@ h1 {
 .btn-primary {
     background-color: #28a745;
     border-color: #28a745;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
 }
 
 .btn-danger {
     background-color: #dc3545;
     border-color: #dc3545;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
 }
 
 .btn-sm {
     font-size: 0.8rem;
     padding: 0.2rem 0.5rem;
+    border-radius: 5px;  /* Rounded buttons */
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px;  /* Add spacing between rows */
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: #444;  /* White text color */
+}
+
+.table th {
+    background-color: #444;
+    border-bottom: 2px solid #555;
+}
+
+.table tbody tr {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table tbody tr:hover {
+    background-color: #444;
 }
