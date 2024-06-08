@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://img.freepik.com/free-photo/business-concept-with-team-close-up_23-2149151159.jpg?t=st=1717739705~exp=1717743305~hmac=79fa2c922303ce04b09950f73e74fdf724b6c086cb86e220768fe9f0c2217ee9&w=1800') no-repeat center center;  /* Background image */
+    background: url('https://images.unsplash.com/photo-1515847049296-a281d6401047?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;  /* Background image */
     background-size: cover;  /* Cover the entire container */
 }
 
